@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Dengue Test Package",
+        "img": "https://media-eng.dhakatribune.com/uploads/2019/07/dnkmbypxqv3vsbqh4qfk9hyuyb2kvdv8qje8hwwd-1564052698156.jpeg",
+        "description": " If you are showing some or all of these common symptoms: high fever, skin rash, headache, vomiting, muscle and joint pains, you may be suffering from Dengue fever. BlueBuds Dengue Test Package includes two tests that detect the presence of the virus but also helps determine your current condition. We have also included a consultation with an expert BlueBuds doctor so that we can guide you with regards to medication or hospitalization. In addition to tests at our health center, we also conduct Dengue tests at home, so you don't have to worry about leaving your house. We come to you and take a blood sample for analysis in our state-of-the-art lab and you will receive your results within 24 hours. As part of this package, our doctors are available to speak with you via online video consultation to guide your recovery."
+    },
+    {
+        "id": 2,
+        "name": "Dental Care",
+        "img": "https://www.pasadenahealthcenter.com/site/wp-content/uploads/2018/02/Dentist-Check-Up.jpg",
+        "description": "Oral health affects your life in ways that are often taken for granted. Your mouth can reflect the overall health of your body, showing signs of infection or disease before you experience other symptoms. It’s a commonly overlooked aspect of health management, but one that is crucial to your well being. The complications from a lack of dental care can extend far beyond gingivitis. There’s a proven link between gum disease and heart disease, and gum disease can also indicate a risk of preterm childbirth in pregnant women. Additionally, almost all systemic diseases have an oral component. This includes oral cancer, diabetes, and kidney disease. Our dentists are always here to support you giving their best. Without any delay consult your favourite dentist here to be cured."
+    },
+    {
+        "id": 3,
+        "name": "Mental Health Care",
+        "img": "https://www.jsi.com/wp-content/uploads/2017/10/mental-health-2019924_960_720.jpg",
+        "description": "If you are facing any of these: mood disorders (such as depression or bipolar disorder) anxiety disorders, personality disorders, psychotic disorders (such as schizophrenia), eating disorders, trauma-related disorders (such as post-traumatic stress disorder), substance abuse disorders, then you are not healthy. In most the cases people don't care about there mental health. But It's the most important thing to live. It gives you strength. Without a refreshed mind, you will become dull. Day by day, people got depressed and they commit suicide. We care about you, about your refreshment. We support you in any condition. We hope for your best live. Come to have the best consultancy from our doctors. Be with BlueBuds and have a best life."
+    },
+    {
+        "id": 4,
+        "name": "Nutritional Support",
+        "img": "https://www.mountsinai.org/files/MSHealth/Assets/HS/Care/Gastroenterology/MSHS-NutritionIssue-770x420.jpg",
+        "description": "Achieving good nutritional status is an important way to support other healthcare interventions in reducing morbidity and mortality. This can be in the form of nutritional advice, support and supplementation. We provide the nutritional support (therapy) for people who cannot get enough nourishment by eating or drinking. You may need it if you can't swallow, have problems with your appetite. There are also risks associated with enteral and parenteral nutrition support that must be taken into consideration. Serious complications include aspiration of enteral feedings and infectious and thrombotic events related to parenteral venous access . Appreciable under- or overfeeding can result in adverse metabolic consequences. Such complications can also be associated with increased lengths of hospital stay and health care expenditures."
+    },
+    {
+        "id": 5,
+        "name": "Prenatal Care",
+        "img": "https://i0.wp.com/ogaidaho.com/wp-content/uploads/2020/03/checkup-prenatal.jpg",
+        "description": "Prenatal care is the health care you get here from our best doctors while you are pregnant. It includes your checkups and prenatal testing. It can help keep you and your baby healthy. It lets your health care provider spot health problems early. It reduces complications during pregnancy and prevents problems during delivery. Regular medical care during pregnancy provides you with vital information about changes in your body that could put the pregnancy or your health at risk. The goal of our prenatal care is to ensure that you and your baby remain healthy during your entire pregnancy. Ideally, prenatal care starts as soon as you think you're pregnant. Your health care provider might schedule prenatal care appointments about every four weeks throughout the second trimester."
+    },
+    {
+        "id": 6,
+        "name": "Laboratory and Diagnostic Care",
+        "img": "https://www.nchealthinfo.org/wp-content/uploads/2019/08/LabTestsAndDiagnostic-300x239.jpg",
+        "description": "You can have our doctor's consultation to check if a person’s health is normal. We have our own lab to test a sample of your blood, urine or body tissue to see if something is wrong. Our diagnostic test, like blood pressure testing, can show if you have low or high blood pressure. We provide diagnostic care includes tests/procedures ordered by a physician and office visits needed to help diagnose or monitor your condition or disease. Here, you will get Diagnostic tools include radiology, ultrasound, nuclear medicine, laboratory, pathology services, and other tests."
+    }
+]
