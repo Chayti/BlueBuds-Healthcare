@@ -1,0 +1,37 @@
+.health-check-banner{
+    width: 100%;
+    padding: 40px 60px;
+    height: 100vh;
+    background-image: url(../../images/healthCheck-banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.health-check-banner .front-bg{
+    background-color: #55063b9a;
+}
+.health-check-banner h1{
+  font-size: 3em;
+  color: #00b9d1;
+}
+.health-check-banner h2{
+  font-size: 2.3em;
+  color: white;
+}
+.health-check-banner h1, .health-check-banner h2{
+  font-weight: bold;
+  word-wrap: break-word;
+}
+.health-check-detail img{
+  width: 50%;
+}
+.health-check-detail h1{
+  color: #00b9d1;
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow:  0px 0px 5px #000;
+  word-wrap: break-word;
+}
+.health-check-detail h4{
+  text-align: justify;
+}

@@ -15,12 +15,11 @@ const PulseDiv = styled.div`
 const ServiceDetail = () => {
     const { serviceId } = useParams();
     const [service, setService] = useState([]);
-    // const
     useEffect(() => {
         fetch('/services.json')
             .then(res => res.json())
-            .then(data => setService(data.find(data => data.id == serviceId)));
-    }, [])
+            .then(data => setService(data.find(data => parseInt(data.id) === parseInt(serviceId))));
+    }, [serviceId])
 
     return (
         <div>
@@ -36,7 +35,7 @@ const ServiceDetail = () => {
             </div>
             <div className="container my-5 service-detail">
                 <h1>What is the {service.name} & who is it for?</h1>
-                <img className="my-3" src={service.img} />
+                <img className="my-3" src={service.img} alt="..." />
                 <h4>{service.description}</h4>
                 <div>
                     <h1 className="text-center my-5">Why choose our {service.name}?</h1>
