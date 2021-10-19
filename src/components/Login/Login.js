@@ -6,7 +6,7 @@ import useAuth from "../../hooks/useAuth";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, getAuth } from "@firebase/auth";
 
 const Login = () => {
-    const { isLoading, setIsLoading, signInUsingGoogle } = useAuth();
+    const { setIsLoading, signInUsingGoogle } = useAuth();
     const location = useLocation();
     const redirect_uri = location.state?.from || '/home';
     const history = useHistory();
