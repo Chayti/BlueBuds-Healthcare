@@ -1,0 +1,40 @@
+.membership-banner{
+    width: 100%;
+    padding: 40px 60px;
+    height: 100vh;
+    background-image: url(../../images/banner-2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.membership-banner h1{
+  font-size: 4em;
+  color: #810054;
+}
+.membership-banner h2{
+  font-size: 2.7em;
+  color: white;
+}
+.membership-banner h1, .membership-banner h2{
+  font-weight: bold;
+  word-wrap: break-word;
+}
+.membership-detail img{
+  width: 50%;
+}
+.membership-detail h1{
+  color: #810054;
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow:  0px 0px 5px #000;
+  word-wrap: break-word;
+}
+.membership-detail h4{
+  text-align: justify;
+}
+.membership-banner-2{
+    background-image: url(../../images/about2.jpg);
+}
+.membership-banner-2 h2{
+    color: #810054;
+}
