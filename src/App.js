@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Membership from './components/Membership/Membership';
 import HealthCheck from './components/HealthCheck/HealthCheck';
 import Footer from './components/Footer/Footer';
+import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
           <HealthCheck></HealthCheck>
         </Route>
         <Route path="/service/:serviceId">
-
+          <ServiceDetail></ServiceDetail>
         </Route>
         <Route path="*">
           <NotFound></NotFound>
