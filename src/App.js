@@ -15,11 +15,9 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-
         <div className="container-fluid" style={{ margin: 0, padding: 0 }}>
           <Header></Header>
         </div>
-
         <Switch>
           <Route exact path="/">
             <Home></Home>
@@ -43,11 +41,9 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
-
         <div className="container-fluid" style={{ margin: 0, padding: 0 }}>
           <Footer></Footer>
         </div>
-
       </BrowserRouter>
     </AuthProvider>
   );
