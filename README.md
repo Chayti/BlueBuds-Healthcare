@@ -1,5 +1,7 @@
 # BlueBuds Health #
 
+Healthcare - Anytime, Anywhere --- Following this tagline, we the team of BlueBuds Health has created this website, made a beautiful, responsive UI. We focused on providing all of our services, experiences, qualities, specialities to our website what we have achieved through all these years.
+
 [Live Site](https://bluebuds-healthcare.web.app/)
 
 5 bullet points of my site are:
