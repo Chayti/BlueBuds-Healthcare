@@ -1,10 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 import logo from '../../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignInAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import useAuth from '../../hooks/useAuth';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const Header = () => {
     const style = {
@@ -23,25 +24,30 @@ const Header = () => {
                 </div>
             </div>
 
-            <nav className="navbar py-1 mt-3">
-                <NavLink to="/home" activeStyle={style} className="link">HOME</NavLink>
-                <NavLink to="/healthCheck" activeStyle={style} className="link">Health Check</NavLink>
-                <NavLink to="/membership" activeStyle={style} className="link">Membership</NavLink>
-                {
-                    user.email ?
-                        <span className="mx-3 my-0  text-light">Hello, {user.displayName}</span>
-                        : <p></p>
-                }
-                {
-                    user.email ?
-                        <img width="30" style={{ borderRadius: "50%" }} src={user.photoURL} />
-                        : <p></p>
-                }
-                {
-                    user.email ? <button onClick={logOut} className="btn"><FontAwesomeIcon icon={faSignOutAlt} size="1x" />&nbsp;Log out</button>
-                        : <NavLink to="/login" activeStyle={style} className="link"><FontAwesomeIcon icon={faSignInAlt} size="1x" />&nbsp;Login</NavLink>
-                }
-            </nav>
+            <Navbar className="py-1 mt-3" collapseOnSelect expand="lg">
+                <Container>
+                    <Navbar.Toggle />
+                    <Navbar.Collapse className="justify-content-center">
+                        <Nav.Link as={Link} to="/home" activeStyle={style} className="link">HOME</Nav.Link>
+                        <Nav.Link as={Link} to="/healthCheck" activeStyle={style} className="link">HEALTH CHECK</Nav.Link>
+                        <Nav.Link as={Link} to="/membership" activeStyle={style} className="link">MEMBERSHIP</Nav.Link>
+                        {
+                            user.email ?
+                                <span className="mx-4 px-1 my-0  text-light">Hello, {user.displayName}</span>
+                                : <p></p>
+                        }
+                        {
+                            user.email ?
+                                <img width="30" style={{ borderRadius: "50%" }} src={user.photoURL} />
+                                : <p></p>
+                        }
+                        {
+                            user.email ? <button onClick={logOut} className="btn"><FontAwesomeIcon icon={faSignOutAlt} size="1x" />&nbsp;Log out</button>
+                                : <NavLink to="/login" activeStyle={style} className="link"><FontAwesomeIcon icon={faSignInAlt} size="1x" />&nbsp;Login</NavLink>
+                        }
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
 
         </div>
     );

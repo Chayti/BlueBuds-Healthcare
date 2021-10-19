@@ -107,7 +107,7 @@ const Login = () => {
     }
 
     return (
-        <div className="d-flex align-items-center justify-content-center my-5 login-section login-box">
+        <div className="d-flex align-items-center justify-content-center login-section login-box">
             <div className="front-bg px-5">
                 <h2 className="fw-bold">Please {isLogin ? 'Login' : 'Register'}</h2>
                 <form onSubmit={handleRegistration}>
