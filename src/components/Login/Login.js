@@ -6,7 +6,7 @@ import useAuth from "../../hooks/useAuth";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, getAuth } from "@firebase/auth";
 
 const Login = () => {
-    const { signInUsingGoogle } = useAuth();
+    const { isLoading, setIsLoading, signInUsingGoogle } = useAuth();
     const location = useLocation();
     const redirect_uri = location.state?.from || '/home';
     const history = useHistory();
@@ -104,10 +104,11 @@ const Login = () => {
             .then(result => {
                 history.push(redirect_uri);
             })
+            .finally(() => setIsLoading(false));
     }
 
     return (
-        <div className="d-flex align-items-center justify-content-center login-section login-box">
+        <div className="d-flex align-items-center justify-content-center my-5 login-section login-box">
             <div className="front-bg px-5">
                 <h2 className="fw-bold">Please {isLogin ? 'Login' : 'Register'}</h2>
                 <form onSubmit={handleRegistration}>
