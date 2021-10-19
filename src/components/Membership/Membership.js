@@ -11,8 +11,8 @@ const Membership = () => {
             <div className="membership-banner d-flex align-items-center justify-content-center ">
                 <div>
                     <div className="front-bg mb-5">
-                        <h1>Sign up to get unlimited access to exceptional care!</h1>
-                        <h2>Our annual membership plans take the stress out of looking after your health, all year round.</h2>
+                        <h1 >Sign up to get unlimited access to exceptional care!</h1>
+                        <h2 className="fs-3">Our membership plans take the stress out of looking after your health</h2>
                         <br /><br />
                         <button className="btn py-3 px-5 fs-4">Become a member</button>
                     </div>
@@ -78,7 +78,7 @@ const Membership = () => {
 
             <div className="membership-banner membership-banner-2 d-flex align-items-center justify-content-center ">
                 <div className="front-bg py-5">
-                    <h2>Annual Membership Plans allow us to help you manage your health better. They include a health check and ongoing monitoring of your and your family's health, and are tailored to your needs.</h2>
+                    <h2 className="fs-1">Annual Membership Plans allow us to help you manage your health better. They include a health check and ongoing monitoring of your and your family's health, and are tailored to your needs.</h2>
                 </div>
             </div>
 
