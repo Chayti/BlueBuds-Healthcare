@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import './Login.css';
 import google from '../../images/google.png';
 import useAuth from "../../hooks/useAuth";
@@ -7,6 +7,16 @@ import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
     const { signInUsingGoogle } = useAuth();
+    const location = useLocation();
+    const redirect_uri = location.state?.from || '/home';
+    const history = useHistory();
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+    }
+
     return (
         <div className="d-flex align-items-center justify-content-center my-5">
             <div>
@@ -23,7 +33,7 @@ const Login = () => {
                 <div className="d-flex align-items-center justify-content-center mt-3">
                     <button
                         className="btn"
-                        onClick={signInUsingGoogle}
+                        onClick={handleGoogleLogin}
                     >
                         <img width="20" src={google} alt="..." />&emsp;Google Sign In
                     </button>

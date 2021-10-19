@@ -10,10 +10,7 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
 
     const signInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                console.log(result.user);
-            })
+        return signInWithPopup(auth, googleProvider);
     }
 
     // observe whether user auth state changed or not
