@@ -28,9 +28,9 @@ const Header = () => {
                 <Container>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-center">
-                        <Nav.Link as={Link} to="/home" activeStyle={style} className="link">HOME</Nav.Link>
-                        <Nav.Link as={Link} to="/healthCheck" activeStyle={style} className="link">HEALTH CHECK</Nav.Link>
-                        <Nav.Link as={Link} to="/membership" activeStyle={style} className="link">MEMBERSHIP</Nav.Link>
+                        <Nav.Link as={Link} to="/home" className="link">HOME</Nav.Link>
+                        <Nav.Link as={Link} to="/healthCheck" className="link">HEALTH CHECK</Nav.Link>
+                        <Nav.Link as={Link} to="/membership" className="link">MEMBERSHIP</Nav.Link>
                         {
                             user.email ?
                                 <span className="mx-4 px-1 my-0  text-light">Hello, {user.displayName}</span>
@@ -38,7 +38,7 @@ const Header = () => {
                         }
                         {
                             user.email ?
-                                <img width="30" style={{ borderRadius: "50%" }} src={user.photoURL} />
+                                <img width="30" style={{ borderRadius: "50%", border: "1px solid wheat", color: "white" }} src={user.photoURL} alt="user" />
                                 : <p></p>
                         }
                         {
