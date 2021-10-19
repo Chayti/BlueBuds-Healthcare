@@ -28,13 +28,15 @@ function App() {
         <Route path="/healthCheck">
           <HealthCheck></HealthCheck>
         </Route>
+        <Route path="/service/:serviceId">
+
+        </Route>
         <Route path="*">
           <NotFound></NotFound>
         </Route>
       </Switch>
 
       <div className="container-fluid" style={{ margin: 0, padding: 0 }}>
-        <div style={{ height: '20px' }}></div>
         <Footer></Footer>
       </div>
 

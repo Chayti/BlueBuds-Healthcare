@@ -5,13 +5,28 @@ import './Home.css';
 import { faUserMd, faVials, faHandHoldingMedical } from '@fortawesome/free-solid-svg-icons';
 import MyCarousel from '../Carousel/Carousel';
 import Feedback from '../Feedback/Feedback';
+import Services from '../Services/Services';
+import styled, { keyframes } from 'styled-components';
+import { pulse, flash } from 'react-animations';
+
+const flashAnimation = keyframes`${flash}`;
+const FlashDiv = styled.div`
+  animation: infinite 3s ${flashAnimation};
+`;
+
+const PulseAnimation = keyframes`${pulse}`;
+const PulseDiv = styled.div`
+  animation: infinite 5s ${PulseAnimation};
+`;
 
 const Home = () => {
     return (
         <>
             <div className="section-1 box">
                 <div className="front-bg">
-                    <h1>HEALTHCARE - Anytime, Anywhere</h1>
+                    <PulseDiv>
+                        <h1>HEALTHCARE - Anytime, Anywhere</h1>
+                    </PulseDiv>
                     <h2>Join BlueBuds, a healthcare system that puts you first</h2>
                     <br /><br />
                     <button className="btn">Book a consultation</button>
@@ -32,7 +47,9 @@ const Home = () => {
             </div>
 
             <div className="section-3">
-                <h1 className="mb-5">The BlueBuds Difference</h1>
+                <PulseDiv>
+                    <h1 className="mb-5">The BlueBuds Difference</h1>
+                </PulseDiv>
                 <CardGroup>
                     <Card className="me-4 border-0">
                         <div className="d-flex justify-content-center mb-3">
@@ -79,7 +96,9 @@ const Home = () => {
             <div className="section-4 box">
                 <h1>Healthcare without the worry</h1>
                 <p className="fs-2">Over 250,000 patients already trust BlueBuds and our services. We operate at the highest standards of care, all for a price you can afford.</p>
-                <button className="btn ms-0">Book a consultation</button>
+                <FlashDiv>
+                    <button className="btn ms-0">Book a consultation</button>
+                </FlashDiv>
             </div>
 
             <div className="section-5 box">
@@ -87,6 +106,8 @@ const Home = () => {
             </div>
 
             <MyCarousel></MyCarousel>
+
+            <Services></Services>
         </>
     );
 }
