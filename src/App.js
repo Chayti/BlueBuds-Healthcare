@@ -8,7 +8,6 @@ import HealthCheck from './components/HealthCheck/HealthCheck';
 import Footer from './components/Footer/Footer';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import Login from './components/Login/Login';
-import Register from './components/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
@@ -39,9 +38,6 @@ function App() {
           </PrivateRoute>
           <Route path="/login">
             <Login></Login>
-          </Route>
-          <Route path="/register">
-            <Register></Register>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

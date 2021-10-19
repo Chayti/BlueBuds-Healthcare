@@ -5,7 +5,6 @@ import logo from '../../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignInAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import useAuth from '../../hooks/useAuth';
-import useFirebase from '../../hooks/useFirebase';
 
 const Header = () => {
     const style = {
@@ -39,7 +38,7 @@ const Header = () => {
                         : <p></p>
                 }
                 {
-                    user.email ? <button onClick={logOut} className="btn"><FontAwesomeIcon icon={faSignInAlt} size="1x" />&nbsp;Log out</button>
+                    user.email ? <button onClick={logOut} className="btn"><FontAwesomeIcon icon={faSignOutAlt} size="1x" />&nbsp;Log out</button>
                         : <NavLink to="/login" activeStyle={style} className="link"><FontAwesomeIcon icon={faSignInAlt} size="1x" />&nbsp;Login</NavLink>
                 }
             </nav>
